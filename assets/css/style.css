@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Scroll bar configuração*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+
+/*Corpo projeto*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #000000;
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/fundo.png);
+}
+
+.container-personagens-icon {
+    box-shadow: 5px 5px 20px #888;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#container-apresentação {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cards-button {
+    width: 180px;
+    box-shadow: 5px 5px 20px #888;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.card-personagem {
+    margin-top: 50px;
+    box-shadow: 5px 5px 20px #888;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 100%;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.imagem-personagem {
+    width: 200px;
+}
+
+.nome-personagem {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.descrição-personagem {
+    line-height: 50px;
+    padding: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.cards-button:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+@media (max-width: 521px){
+
+    .card-personagem {
+        margin-top: 50px;
+        box-shadow: 5px 5px 20px #888;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        background-color: black;
+    }
+
+    .container-personagens-icon {
+        box-shadow: 5px 5px 20px #888;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 20px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cards-button {
+        width: 100px;
+        box-shadow: 5px 5px 20px #888;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nome-personagem {
+        color: #fff;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    
+    .descrição-personagem {
+        line-height: 50px;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
